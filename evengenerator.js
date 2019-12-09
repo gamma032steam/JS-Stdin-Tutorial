@@ -18,13 +18,13 @@ async function main() {
         count += 2;
         console.log(count);
         if (count % 10 == 0) {
-            const answer = await ask('Continue? Y or N: ');
-                if (answer == 'N') {
-                    // We're not reading any more input
-                    r1.close();
-                    // Stop generating numbers
-                    break;
-                }
+        const answer = await ask('Continue? Y or N: ');
+            if (answer == 'N') {
+                // We're not reading any more input
+                r1.close();
+                // Stop generating numbers
+                break;
+            }
         }
     }
 }
